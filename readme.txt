@@ -6,3 +6,4 @@ git status
 git diff
 git log
 git log --pretty=oneline
+nothing
