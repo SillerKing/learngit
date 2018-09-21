@@ -12,3 +12,8 @@ git reset --hard HEAD~100
 git reset --hard version
 git reflog
 working directory
+repository
+zancunquhuitui
+git reset HEAD file
+gongzuoqu huifu 
+git checkout -- file
