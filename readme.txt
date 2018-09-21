@@ -4,3 +4,5 @@ git add filename
 git commit -m ""
 git status
 git diff
+git log
+git log --pretty=oneline
