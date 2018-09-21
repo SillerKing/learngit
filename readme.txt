@@ -7,3 +7,8 @@ git diff
 git log
 git log --pretty=oneline
 nothing
+git reset --hard HEAD^
+git reset --hard HEAD~100
+git reset --hard version
+git reflog
+working directory
