@@ -18,3 +18,5 @@ git reset HEAD file
 gongzuoqu huifu 
 git checkout -- file
 git branch
+git merge dev
+git switch -c dev
