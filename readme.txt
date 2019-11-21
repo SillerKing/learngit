@@ -19,3 +19,5 @@ gongzuoqu huifu
 git checkout -- file
 git branch
 git log --graph
+git merge dev
+git switch -c dev
