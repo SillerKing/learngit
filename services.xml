@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:simple="http://cxf.apache.org/simple"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd 
+        http://cxf.apache.org/simple http://cxf.apache.org/schemas/simple.xsd">
+    
+    <bean id="exampleAoSvc" class="com.sitech.mmc.atom.impl.example.ExampleAo">
+        <property name="exampleEntity" ref="exampleEntity"/>
+    </bean>   
+    <bean id="exampleCoSvc" class="com.sitech.mmc.comp.impl.example.ExampleCo">
+    </bean>
+    
+    <bean id="qryEventAoSvc" class="com.sitech.mmc.atom.impl.s4540.QryEventAo">
+    	<property name="eventInfoEntity" ref="eventInfoEntity"/>
+    	<property name="factorInfoEntity" ref="factorInfoEntity"/>
+    	<property name="prelimitInfoEntity" ref="prelimitInfoEntity"/>
+    	<property name="dimensionInfoEntity" ref="dimensionInfoEntity"/>
+    </bean>
+    
+    <bean id="qryUniCodeAoSvc" class="com.sitech.mmc.atom.impl.common.QryUniCodeAo">
+    	<property name="uniCodeDefEntity" ref="uniCodeDefEntity"/>
+    </bean>
+    
+    <bean id="delEventAoSvc" class="com.sitech.mmc.atom.impl.s4540.DelEventAo">
+    	<property name="eventInfoEntity" ref="eventInfoEntity"/>
+    </bean>
+    
+    <bean id="auditEventAoSvc" class="com.sitech.mmc.atom.impl.s4541.AuditEventAo">
+    	<property name="eventInfoEntity" ref="eventInfoEntity"/>
+    </bean>
+
+    <bean id="getDateSelCodeAoSvc" class="com.sitech.mmc.atom.impl.common.GetDateSelCodeAo">
+    	<property name="dateSelCodeEntity" ref="dateSelCodeEntity"/>
+    </bean>
+    
+    <bean id="addEventAoSvc" class="com.sitech.mmc.atom.impl.s4540.AddEventAo">
+    	<property name="eventInfoEntity" ref="eventInfoEntity"/>
+    </bean>
+    
+    <bean id="subEventAoSvc" class="com.sitech.mmc.atom.impl.s4540.SubEventAo">
+    	<property name="eventInfoEntity" ref="eventInfoEntity"/>
+    </bean>
+        
+    <bean id="qryMeansInfoAoSvc" class="com.sitech.mmc.atom.impl.common.QryMeansInfoAo">
+    	<property name="qryMeansInfoAoEntity" ref="qryMeansInfoAoEntity"/>
+    </bean>
+    
+    <bean id="monitorBusiProcessAoSvc" class="com.sitech.mmc.atom.impl.s4825.MonitorBusiProcessAo">
+    	<property name="monitorBusiProcessEntity" ref="monitorBusiProcessEntity"/>
+    </bean>
+    
+    <bean id="qryFactorAoSvc" class="com.sitech.mmc.atom.impl.s4540.QryFactorAo">
+    	<property name="factorInfoEntity" ref="factorInfoEntity"/>
+    </bean>
+    
+    <bean id="qryPrelimitAoSvc" class="com.sitech.mmc.atom.impl.s4540.QryPrelimitAo">
+    	<property name="prelimitInfoEntity" ref="prelimitInfoEntity"/>
+    </bean>
+    
+    <bean id="qryDimensionAoSvc" class="com.sitech.mmc.atom.impl.s4540.QryDimensionAo">
+    	<property name="dimensionInfoEntity" ref="dimensionInfoEntity"/>
+    </bean>
+    
+    <bean id="addFactorAoSvc" class="com.sitech.mmc.atom.impl.s4540.AddFactorAo">
+    	<property name="factorInfoEntity" ref="factorInfoEntity"/>
+    	<property name="sequenceEntity" ref="sequenceEntity"/>
+    </bean>
+    
+    <bean id="getUserBillDeailAoSvc" class="com.sitech.mmc.atom.impl.s4545.GetUserBillDeailAo">
+    	<property name="getUserBillDeailEntity" ref="getUserBillDeailEntity"/>
+    </bean>
+    
+    <bean id="delFactorAoSvc" class="com.sitech.mmc.atom.impl.s4540.DelFactorAo">
+    	<property name="factorInfoEntity" ref="factorInfoEntity"/>
+    </bean>
+    
+    <bean id="delPrelimitAoSvc" class="com.sitech.mmc.atom.impl.s4540.DelPrelimitAo">
+    	<property name="prelimitInfoEntity" ref="prelimitInfoEntity"/>
+    </bean>
+    
+    <bean id="uniteChannelSerAoSvc" class="com.sitech.mmc.atom.impl.outsideserv.UniteChannelSerAo">
+    	<property name="uniteChannelSerEntity" ref="uniteChannelSerEntity"/>
+    </bean>
+    
+    <bean id="addPrelimitAoSvc" class="com.sitech.mmc.atom.impl.s4540.AddPrelimitAo">
+    	<property name="prelimitInfoEntity" ref="prelimitInfoEntity"/>
+    </bean>
+    
+    <bean id="addDimensionAoSvc" class="com.sitech.mmc.atom.impl.s4540.AddDimensionAo">
+    	<property name="dimensionInfoEntity" ref="dimensionInfoEntity"/>
+    </bean>
+    
+    <bean id="delDimensionAoSvc" class="com.sitech.mmc.atom.impl.s4540.DelDimensionAo">
+    	<property name="dimensionInfoEntity" ref="dimensionInfoEntity"/>
+    </bean>
+    
+    <bean id="baseLableInfoAoSvc" class="com.sitech.mmc.atom.impl.s4544.BaseLableInfoAo">
+    	<property name="baseLableInfoEntity" ref="baseLableInfoEntity"/>
+    </bean>
+    
+    <bean id="updEventAoSvc" class="com.sitech.mmc.atom.impl.s4540.UpdEventAo">
+    	<property name="eventInfoEntity" ref="eventInfoEntity"/>
+    </bean>
+    
+    <bean id="updPrelimitAoSvc" class="com.sitech.mmc.atom.impl.s4820.UpdPrelimitAo">
+    	<property name="prelimitInfoEntity" ref="prelimitInfoEntity"/>
+    </bean>
+    
+    <bean id="updFactorAoSvc" class="com.sitech.mmc.atom.impl.s4540.UpdFactorAo">
+    	<property name="factorInfoEntity" ref="factorInfoEntity"/>
+    </bean>
+    
+    <bean id="refreshKFKDataAoSvc" class="com.sitech.mmc.atom.impl.s4821.RefreshKFKDataAo">
+    	<property name="refreshKFKDataEntity" ref="refreshKFKDataEntity"/>
+    </bean>
+    
+	<bean id="dealFileDataAoSvc" class="com.sitech.mmc.atom.impl.s4547.DealFileDataAo">
+    	<property name="dealFileDataEntity" ref="dealFileDataEntity"/>
+    </bean>
+    
+    <bean id="groupBusiLabelAoSvc" class="com.sitech.mmc.atom.impl.slabel.GroupBusiLabelAo">
+    	<property name="busiLabelEntity" ref="busiLabelEntity"/>
+    </bean>
+    
+    <bean id="addLoginNoAuthConfigAoSvc" class="com.sitech.mmc.atom.impl.s4549.AddLoginNoAuthConfigAo">
+    	<property name="loginNoAuthConfigEntity" ref="loginNoAuthConfigEntity"/>
+    	<property name="dealFileDataEntity" ref="dealFileDataEntity"/>
+    </bean>
+    
+    <bean id="qryLoginNoAuthConfigAoSvc" class="com.sitech.mmc.atom.impl.s4549.QryLoginNoAuthConfigAo">
+    	<property name="loginNoAuthConfigEntity" ref="loginNoAuthConfigEntity"/>
+    </bean>
+    
+    <bean id="updLoginNoAuthConfigAoSvc" class="com.sitech.mmc.atom.impl.s4549.UpdLoginNoAuthConfigAo">
+    	<property name="loginNoAuthConfigEntity" ref="loginNoAuthConfigEntity"/>
+    </bean>
+    
+    <bean id="rmvLoginNoAuthConfigAoSvc" class="com.sitech.mmc.atom.impl.s4549.RmvLoginNoAuthConfigAo">
+    	<property name="loginNoAuthConfigEntity" ref="loginNoAuthConfigEntity"/>
+    </bean>
+    
+    <bean id="auditLoginNoAuthConfigAoSvc" class="com.sitech.mmc.atom.impl.s4549.AuditLoginNoAuthConfigAo">
+    	<property name="loginNoAuthConfigEntity" ref="loginNoAuthConfigEntity"/>
+    </bean>
+    
+    <bean id="effLoginNoAuthConfigAoSvc" class="com.sitech.mmc.atom.impl.s4549.EffLoginNoAuthConfigAo">
+    	<property name="loginNoAuthConfigEntity" ref="loginNoAuthConfigEntity"/>
+    </bean>
+    
+    <bean id="pauseLoginNoAuthConfigAoSvc" class="com.sitech.mmc.atom.impl.s4549.PauseLoginNoAuthConfigAo">
+    	<property name="loginNoAuthConfigEntity" ref="loginNoAuthConfigEntity"/>
+    </bean>
+    
+    <bean id="qryUserLabelInfoAoSvc" class="com.sitech.mmc.atom.impl.s4548.QryUserLabelInfoAo">
+    	<property name="userLabelInfoEntity" ref="userLabelInfoEntity"/>
+    </bean>
+    
+    <bean id="dealEipDataAoSvc" class="com.sitech.mmc.atom.impl.s4550.DealEipDataAo">
+        <property name="dealEipDataEntity" ref="dealEipDataEntity"/>
+    </bean>
+    
+    <bean id="calculateARPUAoSvc" class="com.sitech.mmc.atom.impl.s6907.CalculateARPUAo">
+        <property name="calculateARPUEntity" ref="calculateARPUEntity"/>
+    </bean>
+    
+    <bean id="dealReCommendCalInfoAoSvc" class="com.sitech.mmc.atom.impl.s4551.DealReCommendCalInfoAo">
+        <property name="dealReCommendCalInfoEntity" ref="dealReCommendCalInfoEntity"/>
+    </bean>
+    
+    <bean id="reCommendCalAoSvc" class="com.sitech.mmc.atom.impl.reCommend.ReCommendCalAo">
+        <property name="reCommendCalEntity" ref="reCommendCalEntity"/>
+    </bean>
+    
+    <bean id="qryLoginInfoAoSvc" class="com.sitech.mmc.atom.impl.common.QryLoginInfoAo">
+        <property name="loginInfoEntity" ref="loginInfoEntity"/>
+    </bean>
+    
+    <bean id="villageAvgTimeAoSvc" class="com.sitech.mmc.atom.impl.village.VillageAvgTimeAo">
+        <property name="mmBroadVillageAvgTimeEntity" ref="mmBroadVillageAvgTimeEntity"/>
+    </bean>
+</beans>
