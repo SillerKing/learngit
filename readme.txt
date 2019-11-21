@@ -20,3 +20,4 @@ git checkout -- file
 git branch
 git merge dev
 git switch -c dev
+git merge --no-ff -m 'merge with no-ff' dev
