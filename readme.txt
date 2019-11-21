@@ -18,3 +18,4 @@ git reset HEAD file
 gongzuoqu huifu 
 git checkout -- file
 git branch
+git log --graph
